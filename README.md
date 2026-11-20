@@ -4,14 +4,13 @@
 
 ## ダウンロード
 
-[0.5.2 プレビュー版](https://github.com/onihachi/focus-zoom/releases/tag/v0.5.2) の **Assets** から `Focus-Zoom-0.5.2-preview.zip` をダウンロードしてください。GitHubの自動生成ファイル「Source code (zip)」ではありません。
+[Focus Zoom 0.5.3 正式版をダウンロード](https://github.com/onihachi/focus-zoom/releases/download/v0.5.3/Focus-Zoom-0.5.3.zip)
 
-- 対象：Premiere Pro 26.5以降、Adobe Creative Cloudデスクトップアプリ。
-- **プレビュー版**：自動テスト済みですが、この配布版の新規インストールと動作はPremiere実機では未検証です。まずは本番ではなく、短いテスト用クリップでお試しください。
+Premiere Pro 26.5以降とAdobe Creative Cloudデスクトップアプリが必要です。macOSのPremiere Pro 26.5.3で動作を確認しました。
 
 ## インストール
 
-1. 配布ZIPを解凍し、中の `Focus-Zoom-0.5.2.ccx` をダブルクリック。
+1. 配布ZIPを解凍し、中の `Focus-Zoom-0.5.3.ccx` をダブルクリック。
 2. Creative Cloudで配布元を確認し、インストール。Marketplace外のプラグインとして確認画面が出る場合があります。
 3. Premiere Proを開き、**ウィンドウ → UXPプラグイン → Focus Zoom**。表示されなければ、保存してからPremiereを開き直します。
 
@@ -29,7 +28,8 @@
 
 ## 注意点
 
-- 初回プレビューで `FocusZoom-Overview-` から始まる補助シーケンスを作ります。選択だけでは編集タイムラインにキーを追加しません。
+- 通常素材のプレビューには、プロジェクトごとに `FocusZoom-Preview` を1つ作り、素材を切り替えても同じものを使います。旧版が作った補助シーケンスはプロジェクト内に残ります。選択だけでは編集タイムラインにキーを追加しません。
+- 素材の切り替えはPremiereの取り消し履歴に入ります。取り消し後に別素材を選ぶと「やり直し」が消える場合があります。
 - 「移動」「全体へ戻す」はクリップの **モーション** に約0.6秒のキーを追加します。既存キーと重なる場合は上書きせず止まります。操作はPremiereの取り消しで戻せます。
 - 逆再生・タイムリマップ・フレーム保持は、先にネストして外側を選んでください。
 
